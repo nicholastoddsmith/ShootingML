@@ -27,7 +27,6 @@ def Fit(MF, A, Y, W, ss, bs):
         A = A[bi]
         Y = Y[bi]
         W = W[bi]
-    np.random.seed(0)
     return MF().fit(A, Y, sample_weight=W)
 
 def Pred(M, A, IP):
